@@ -1,0 +1,1782 @@
+{
+ "demo": {
+  "generatedBy": "scripts/generate.mjs",
+  "seed": 20261111,
+  "prs": 13,
+  "metrics": 6,
+  "familyAlpha": 0.05,
+  "realEffects": 6,
+  "adjusted": {
+   "flags": 3,
+   "correct": 3,
+   "false": 0,
+   "realCaught": 3
+  },
+  "naive": {
+   "flags": 32,
+   "correct": 5,
+   "false": 27,
+   "realCaught": 4,
+   "looks": "early check (1 h) + full report (24 h), equal-length window before, z test at 95%"
+  },
+  "rows": [
+   {
+    "pr": 276,
+    "metric": "frustration",
+    "hours": 28,
+    "rel": -0.0386,
+    "lo": -0.2641,
+    "hi": 0.1869,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.1481,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0407,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 276,
+    "metric": "task_failure",
+    "hours": 28,
+    "rel": -0.055,
+    "lo": -0.2843,
+    "hi": 0.1743,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.2222,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.052,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 276,
+    "metric": "forgetting",
+    "hours": 28,
+    "rel": 0.1441,
+    "lo": -0.185,
+    "hi": 0.4732,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.3185,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.1322,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 276,
+    "metric": "empty_response",
+    "hours": 28,
+    "rel": -0.0231,
+    "lo": -0.4868,
+    "hi": 0.4405,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.2428,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0901,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 276,
+    "metric": "tool_error",
+    "hours": 28,
+    "rel": 0.0079,
+    "lo": -0.228,
+    "hi": 0.2438,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.2189,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0041,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 276,
+    "metric": "cost",
+    "hours": 28,
+    "rel": -0.0837,
+    "lo": -0.1859,
+    "hi": 0.0186,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.1127,
+     "verdict": "better"
+    },
+    "naiveFull": {
+     "rel": -0.0872,
+     "verdict": "better",
+     "hours": 24
+    },
+    "truth": 0.93,
+    "tiny": true
+   },
+   {
+    "pr": 278,
+    "metric": "frustration",
+    "hours": 25,
+    "rel": -0.0842,
+    "lo": -0.3147,
+    "hi": 0.1463,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.0419,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0604,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 278,
+    "metric": "task_failure",
+    "hours": 25,
+    "rel": 0.1366,
+    "lo": -0.1253,
+    "hi": 0.3985,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.1485,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.1346,
+     "verdict": "worse",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 278,
+    "metric": "forgetting",
+    "hours": 25,
+    "rel": -0.1112,
+    "lo": -0.4829,
+    "hi": 0.2604,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.1578,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.119,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 278,
+    "metric": "empty_response",
+    "hours": 25,
+    "rel": -0.0451,
+    "lo": -0.5595,
+    "hi": 0.4692,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.2188,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.008,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 278,
+    "metric": "tool_error",
+    "hours": 25,
+    "rel": -0.0718,
+    "lo": -0.3415,
+    "hi": 0.198,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.1946,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0632,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 278,
+    "metric": "cost",
+    "hours": 25,
+    "rel": -0.0303,
+    "lo": -0.1441,
+    "hi": 0.0835,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.0048,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0189,
+     "verdict": "better",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 279,
+    "metric": "frustration",
+    "hours": 67,
+    "rel": 0.0209,
+    "lo": -0.2049,
+    "hi": 0.2466,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.2342,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.2034,
+     "verdict": "worse",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 279,
+    "metric": "task_failure",
+    "hours": 67,
+    "rel": -0.0161,
+    "lo": -0.255,
+    "hi": 0.2228,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.1572,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0104,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 279,
+    "metric": "forgetting",
+    "hours": 67,
+    "rel": 0.0596,
+    "lo": -0.3287,
+    "hi": 0.448,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.1674,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0494,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 279,
+    "metric": "empty_response",
+    "hours": 67,
+    "rel": 0.0663,
+    "lo": -0.4012,
+    "hi": 0.5338,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.2736,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.064,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 279,
+    "metric": "tool_error",
+    "hours": 67,
+    "rel": 0.0194,
+    "lo": -0.2676,
+    "hi": 0.3065,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.3645,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0427,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 279,
+    "metric": "cost",
+    "hours": 67,
+    "rel": -0.0385,
+    "lo": -0.1499,
+    "hi": 0.0728,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.0058,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.1498,
+     "verdict": "better",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 281,
+    "metric": "frustration",
+    "hours": 24,
+    "rel": 0.0226,
+    "lo": -0.2304,
+    "hi": 0.2755,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.232,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0793,
+     "verdict": "better",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 281,
+    "metric": "task_failure",
+    "hours": 24,
+    "rel": -0.0614,
+    "lo": -0.3386,
+    "hi": 0.2158,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.1293,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.1116,
+     "verdict": "better",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 281,
+    "metric": "forgetting",
+    "hours": 24,
+    "rel": 0.0751,
+    "lo": -0.3119,
+    "hi": 0.4621,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.0794,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.2413,
+     "verdict": "worse",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 281,
+    "metric": "empty_response",
+    "hours": 24,
+    "rel": -0.0469,
+    "lo": -0.5386,
+    "hi": 0.4447,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.2269,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0703,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 281,
+    "metric": "tool_error",
+    "hours": 24,
+    "rel": -0.0774,
+    "lo": -0.3443,
+    "hi": 0.1894,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.36,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.0275,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 281,
+    "metric": "cost",
+    "hours": 24,
+    "rel": 0.0173,
+    "lo": -0.0954,
+    "hi": 0.1301,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.0156,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.1593,
+     "verdict": "worse",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 283,
+    "metric": "frustration",
+    "hours": 6,
+    "rel": 0.0018,
+    "lo": -0.3195,
+    "hi": 0.3231,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.0452,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0597,
+     "verdict": "none",
+     "hours": 6
+    },
+    "truth": 1.04,
+    "tiny": true
+   },
+   {
+    "pr": 283,
+    "metric": "task_failure",
+    "hours": 6,
+    "rel": -0.0848,
+    "lo": -0.4552,
+    "hi": 0.2856,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.0714,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.1305,
+     "verdict": "none",
+     "hours": 6
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 283,
+    "metric": "forgetting",
+    "hours": 6,
+    "rel": -0.0144,
+    "lo": -0.4726,
+    "hi": 0.4439,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.129,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0482,
+     "verdict": "none",
+     "hours": 6
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 283,
+    "metric": "empty_response",
+    "hours": 6,
+    "rel": 0.1258,
+    "lo": -0.5311,
+    "hi": 0.7827,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.4007,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.1524,
+     "verdict": "none",
+     "hours": 6
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 283,
+    "metric": "tool_error",
+    "hours": 6,
+    "rel": 0.3934,
+    "lo": 0.0586,
+    "hi": 0.7282,
+    "verdict": "worse",
+    "detectedAtHour": 5,
+    "naiveEarly": {
+     "rel": 0.4585,
+     "verdict": "worse"
+    },
+    "naiveFull": {
+     "rel": 0.518,
+     "verdict": "worse",
+     "hours": 6
+    },
+    "truth": 1.35,
+    "tiny": false
+   },
+   {
+    "pr": 283,
+    "metric": "cost",
+    "hours": 6,
+    "rel": -0.0227,
+    "lo": -0.1588,
+    "hi": 0.1135,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.0318,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.0518,
+     "verdict": "worse",
+     "hours": 6
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 285,
+    "metric": "frustration",
+    "hours": 18,
+    "rel": 0.0365,
+    "lo": -0.3221,
+    "hi": 0.395,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.1555,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.0573,
+     "verdict": "none",
+     "hours": 18
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 285,
+    "metric": "task_failure",
+    "hours": 18,
+    "rel": 0.2389,
+    "lo": -0.2032,
+    "hi": 0.681,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.2319,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.1465,
+     "verdict": "worse",
+     "hours": 18
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 285,
+    "metric": "forgetting",
+    "hours": 18,
+    "rel": -0.0469,
+    "lo": -0.5765,
+    "hi": 0.4828,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.0334,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.1021,
+     "verdict": "none",
+     "hours": 18
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 285,
+    "metric": "empty_response",
+    "hours": 18,
+    "rel": 0.0029,
+    "lo": -0.7213,
+    "hi": 0.7272,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.286,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.1003,
+     "verdict": "none",
+     "hours": 18
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 285,
+    "metric": "tool_error",
+    "hours": 18,
+    "rel": 0.0321,
+    "lo": -0.3155,
+    "hi": 0.3797,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.1748,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.0311,
+     "verdict": "none",
+     "hours": 18
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 285,
+    "metric": "cost",
+    "hours": 18,
+    "rel": 0.0227,
+    "lo": -0.1317,
+    "hi": 0.1772,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.0436,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0258,
+     "verdict": "better",
+     "hours": 18
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 284,
+    "metric": "frustration",
+    "hours": 23,
+    "rel": 0.0077,
+    "lo": -0.3382,
+    "hi": 0.3536,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.2237,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.0245,
+     "verdict": "none",
+     "hours": 23
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 284,
+    "metric": "task_failure",
+    "hours": 23,
+    "rel": -0.038,
+    "lo": -0.4339,
+    "hi": 0.3579,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.3694,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.0464,
+     "verdict": "none",
+     "hours": 23
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 284,
+    "metric": "forgetting",
+    "hours": 23,
+    "rel": 0.5526,
+    "lo": 0.0321,
+    "hi": 1.0731,
+    "verdict": "worse",
+    "detectedAtHour": 12,
+    "naiveEarly": {
+     "rel": 0.5855,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.4947,
+     "verdict": "worse",
+     "hours": 23
+    },
+    "truth": 1.45,
+    "tiny": false
+   },
+   {
+    "pr": 284,
+    "metric": "empty_response",
+    "hours": 23,
+    "rel": -0.0431,
+    "lo": -0.7287,
+    "hi": 0.6426,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.3951,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0819,
+     "verdict": "none",
+     "hours": 23
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 284,
+    "metric": "tool_error",
+    "hours": 23,
+    "rel": -0.1215,
+    "lo": -0.4468,
+    "hi": 0.2038,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.1248,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0931,
+     "verdict": "better",
+     "hours": 23
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 284,
+    "metric": "cost",
+    "hours": 23,
+    "rel": -0.0071,
+    "lo": -0.1639,
+    "hi": 0.1497,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.0322,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.0019,
+     "verdict": "none",
+     "hours": 23
+    },
+    "truth": 0.985,
+    "tiny": true
+   },
+   {
+    "pr": 286,
+    "metric": "frustration",
+    "hours": 26,
+    "rel": -0.0175,
+    "lo": -0.2985,
+    "hi": 0.2634,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.1009,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.0056,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 286,
+    "metric": "task_failure",
+    "hours": 26,
+    "rel": -0.0122,
+    "lo": -0.3313,
+    "hi": 0.3069,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.0259,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0101,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 286,
+    "metric": "forgetting",
+    "hours": 26,
+    "rel": -0.0172,
+    "lo": -0.4102,
+    "hi": 0.3758,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.057,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.0227,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 286,
+    "metric": "empty_response",
+    "hours": 26,
+    "rel": -0.0402,
+    "lo": -0.628,
+    "hi": 0.5476,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 2.3343,
+     "verdict": "worse"
+    },
+    "naiveFull": {
+     "rel": -0.059,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 286,
+    "metric": "tool_error",
+    "hours": 26,
+    "rel": 0.0721,
+    "lo": -0.2202,
+    "hi": 0.3645,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.0281,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.0354,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 286,
+    "metric": "cost",
+    "hours": 26,
+    "rel": -0.0215,
+    "lo": -0.1578,
+    "hi": 0.1148,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.0498,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0323,
+     "verdict": "better",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 288,
+    "metric": "frustration",
+    "hours": 25,
+    "rel": -0.0623,
+    "lo": -0.3267,
+    "hi": 0.202,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.0102,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0082,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 288,
+    "metric": "task_failure",
+    "hours": 25,
+    "rel": 0.0756,
+    "lo": -0.2188,
+    "hi": 0.3699,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.0367,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.1201,
+     "verdict": "worse",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 288,
+    "metric": "forgetting",
+    "hours": 25,
+    "rel": -0.0402,
+    "lo": -0.4362,
+    "hi": 0.3558,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.1096,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.128,
+     "verdict": "better",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 288,
+    "metric": "empty_response",
+    "hours": 25,
+    "rel": -0.8917,
+    "lo": -1,
+    "hi": -0.3531,
+    "verdict": "better",
+    "detectedAtHour": 3,
+    "naiveEarly": {
+     "rel": -1,
+     "verdict": "better"
+    },
+    "naiveFull": {
+     "rel": -0.8977,
+     "verdict": "better",
+     "hours": 24
+    },
+    "truth": 0.12,
+    "tiny": false
+   },
+   {
+    "pr": 288,
+    "metric": "tool_error",
+    "hours": 25,
+    "rel": 0.049,
+    "lo": -0.2086,
+    "hi": 0.3066,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.1304,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.0207,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 288,
+    "metric": "cost",
+    "hours": 25,
+    "rel": 0.0188,
+    "lo": -0.1064,
+    "hi": 0.1439,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.0854,
+     "verdict": "better"
+    },
+    "naiveFull": {
+     "rel": -0.0166,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 289,
+    "metric": "frustration",
+    "hours": 45,
+    "rel": 0.0967,
+    "lo": -0.1637,
+    "hi": 0.357,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.154,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.18,
+     "verdict": "worse",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 289,
+    "metric": "task_failure",
+    "hours": 45,
+    "rel": -0.06,
+    "lo": -0.3366,
+    "hi": 0.2166,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.1938,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0506,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 289,
+    "metric": "forgetting",
+    "hours": 45,
+    "rel": 0.0663,
+    "lo": -0.3575,
+    "hi": 0.4902,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.3934,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0709,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 289,
+    "metric": "empty_response",
+    "hours": 45,
+    "rel": 0.0922,
+    "lo": -1,
+    "hi": 1.3921,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.4909,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0325,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 289,
+    "metric": "tool_error",
+    "hours": 45,
+    "rel": 0.085,
+    "lo": -0.1479,
+    "hi": 0.3179,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.0182,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0668,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 289,
+    "metric": "cost",
+    "hours": 45,
+    "rel": 0.001,
+    "lo": -0.1172,
+    "hi": 0.1192,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.0587,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.1234,
+     "verdict": "better",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 290,
+    "metric": "frustration",
+    "hours": 24,
+    "rel": 0.0733,
+    "lo": -0.1495,
+    "hi": 0.296,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.4515,
+     "verdict": "worse"
+    },
+    "naiveFull": {
+     "rel": -0.0633,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 290,
+    "metric": "task_failure",
+    "hours": 24,
+    "rel": -0.0145,
+    "lo": -0.3096,
+    "hi": 0.2805,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.1297,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.089,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1.12,
+    "tiny": false
+   },
+   {
+    "pr": 290,
+    "metric": "forgetting",
+    "hours": 24,
+    "rel": 0.0074,
+    "lo": -0.3812,
+    "hi": 0.3959,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.0145,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.2528,
+     "verdict": "worse",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 290,
+    "metric": "empty_response",
+    "hours": 24,
+    "rel": -0.193,
+    "lo": -1,
+    "hi": 1.3349,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.3351,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.1797,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 290,
+    "metric": "tool_error",
+    "hours": 24,
+    "rel": -0.0011,
+    "lo": -0.2505,
+    "hi": 0.2482,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.0549,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0047,
+     "verdict": "none",
+     "hours": 24
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 290,
+    "metric": "cost",
+    "hours": 24,
+    "rel": -0.095,
+    "lo": -0.2036,
+    "hi": 0.0136,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.0549,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.0516,
+     "verdict": "worse",
+     "hours": 24
+    },
+    "truth": 0.9,
+    "tiny": false
+   },
+   {
+    "pr": 291,
+    "metric": "frustration",
+    "hours": 7,
+    "rel": 0.0413,
+    "lo": -0.2252,
+    "hi": 0.3079,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.2494,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.0886,
+     "verdict": "none",
+     "hours": 7
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 291,
+    "metric": "task_failure",
+    "hours": 7,
+    "rel": 0.1244,
+    "lo": -0.2367,
+    "hi": 0.4856,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.7551,
+     "verdict": "worse"
+    },
+    "naiveFull": {
+     "rel": 0.0458,
+     "verdict": "none",
+     "hours": 7
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 291,
+    "metric": "forgetting",
+    "hours": 7,
+    "rel": 0.2018,
+    "lo": -0.2498,
+    "hi": 0.6534,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.0591,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.4011,
+     "verdict": "worse",
+     "hours": 7
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 291,
+    "metric": "empty_response",
+    "hours": 7,
+    "rel": 0.2487,
+    "lo": -1,
+    "hi": 2.4862,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.6946,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.3258,
+     "verdict": "none",
+     "hours": 7
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 291,
+    "metric": "tool_error",
+    "hours": 7,
+    "rel": -0.0819,
+    "lo": -0.3673,
+    "hi": 0.2036,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.1708,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.1133,
+     "verdict": "none",
+     "hours": 7
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 291,
+    "metric": "cost",
+    "hours": 7,
+    "rel": -0.0194,
+    "lo": -0.1465,
+    "hi": 0.1077,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.0193,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": 0.1157,
+     "verdict": "worse",
+     "hours": 7
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 292,
+    "metric": "frustration",
+    "hours": 16,
+    "rel": -0.128,
+    "lo": -0.4414,
+    "hi": 0.1855,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.032,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0526,
+     "verdict": "none",
+     "hours": 16
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 292,
+    "metric": "task_failure",
+    "hours": 16,
+    "rel": -0.0329,
+    "lo": -0.4403,
+    "hi": 0.3746,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.0758,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0089,
+     "verdict": "none",
+     "hours": 16
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 292,
+    "metric": "forgetting",
+    "hours": 16,
+    "rel": -0.1721,
+    "lo": -0.6477,
+    "hi": 0.3035,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.2023,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.1763,
+     "verdict": "better",
+     "hours": 16
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 292,
+    "metric": "empty_response",
+    "hours": 16,
+    "rel": -0.3373,
+    "lo": -1,
+    "hi": 2.1195,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": -0.3309,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.2433,
+     "verdict": "none",
+     "hours": 16
+    },
+    "truth": 1,
+    "tiny": false
+   },
+   {
+    "pr": 292,
+    "metric": "tool_error",
+    "hours": 16,
+    "rel": -0.0568,
+    "lo": -0.4195,
+    "hi": 0.3059,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.3198,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.1641,
+     "verdict": "better",
+     "hours": 16
+    },
+    "truth": 0.8,
+    "tiny": false
+   },
+   {
+    "pr": 292,
+    "metric": "cost",
+    "hours": 16,
+    "rel": 0.0149,
+    "lo": -0.1359,
+    "hi": 0.1657,
+    "verdict": "none",
+    "detectedAtHour": null,
+    "naiveEarly": {
+     "rel": 0.0385,
+     "verdict": "none"
+    },
+    "naiveFull": {
+     "rel": -0.0461,
+     "verdict": "better",
+     "hours": 16
+    },
+    "truth": 1,
+    "tiny": false
+   }
+  ]
+ },
+ "backtest": {
+  "generatedBy": "node scripts/backtest.mjs 400",
+  "trials": 400,
+  "familyAlpha": 0.05,
+  "metrics": 6,
+  "postHours": 24,
+  "nullMerges": {
+   "adjusted": 0.0025,
+   "naive": 0.9575,
+   "adjustedFixedPeeking": 0.8425,
+   "adjustedCount": 1,
+   "naiveCount": 383,
+   "perMetric": {
+    "frustration": {
+     "adjusted": 0,
+     "naive": 0.6575
+    },
+    "task_failure": {
+     "adjusted": 0,
+     "naive": 0.3475
+    },
+    "forgetting": {
+     "adjusted": 0,
+     "naive": 0.3675
+    },
+    "empty_response": {
+     "adjusted": 0,
+     "naive": 0.19
+    },
+    "tool_error": {
+     "adjusted": 0.0025,
+     "naive": 0.4
+    },
+    "cost": {
+     "adjusted": 0,
+     "naive": 0.7525
+    }
+   }
+  },
+  "power": [
+   {
+    "metric": "forgetting",
+    "effect": 1.45,
+    "trials": 100,
+    "adjPower": 0.73,
+    "adjPower72h": 0.92,
+    "naivePower": 0.95,
+    "adjMedianHours": 11,
+    "adjOtherFalse": 0.02,
+    "naiveOtherFalse": 0.93
+   },
+   {
+    "metric": "tool_error",
+    "effect": 1.35,
+    "trials": 100,
+    "adjPower": 0.67,
+    "adjPower72h": 0.87,
+    "naivePower": 0.98,
+    "adjMedianHours": 13,
+    "adjOtherFalse": 0.01,
+    "naiveOtherFalse": 0.94
+   },
+   {
+    "metric": "frustration",
+    "effect": 1.25,
+    "trials": 100,
+    "adjPower": 0.21,
+    "adjPower72h": 0.58,
+    "naivePower": 0.85,
+    "adjMedianHours": 13,
+    "adjOtherFalse": 0,
+    "naiveOtherFalse": 0.93
+   },
+   {
+    "metric": "task_failure",
+    "effect": 1.3,
+    "trials": 100,
+    "adjPower": 0.29,
+    "adjPower72h": 0.66,
+    "naivePower": 0.92,
+    "adjMedianHours": 13,
+    "adjOtherFalse": 0,
+    "naiveOtherFalse": 0.92
+   },
+   {
+    "metric": "empty_response",
+    "effect": 0.2,
+    "trials": 100,
+    "adjPower": 0.99,
+    "adjPower72h": 1,
+    "naivePower": 1,
+    "adjMedianHours": 10,
+    "adjOtherFalse": 0.01,
+    "naiveOtherFalse": 0.95
+   },
+   {
+    "metric": "cost",
+    "effect": 0.92,
+    "trials": 100,
+    "adjPower": 0.26,
+    "adjPower72h": 0.4,
+    "naivePower": 0.88,
+    "adjMedianHours": 13,
+    "adjOtherFalse": 0,
+    "naiveOtherFalse": 0.89
+   }
+  ],
+  "stacked": {
+   "trials": 100,
+   "gapHours": 6,
+   "effect": "forgetting x1.5 on the first PR only",
+   "secondBlamed": {
+    "adjusted": 0,
+    "withoutAttribution": 0.56,
+    "naive": 0.83
+   }
+  },
+  "runtimeMs": 7118
+ }
+}

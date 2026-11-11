@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" style="background-color:#f4f6f7">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Briefs · Change reports · Raindrop (concept: Change Impact)</title>
+  <meta name="description" content="Unofficial concept demo: anytime-valid, seasonality-adjusted impact estimates for every merged PR in Raindrop Change Reports." />
+  <link rel="icon" href="assets/drop.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Inter+Tight:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app" class="shell">
+    <aside class="nav" aria-label="Primary">
+      <div class="nav-top">
+        <button class="org" type="button" aria-label="Switch project">
+          <span class="org-logo" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 2.5c3.4 4.3 6.5 8 6.5 11.6A6.5 6.5 0 0 1 5.5 14.1C5.5 10.5 8.6 6.8 12 2.5Z" fill="currentColor"/></svg></span>
+          <span class="org-text"><span class="org-name">sprinkle-ai</span><span class="org-proj"><span class="dot-live"></span>production</span></span>
+          <i data-lucide="chevrons-up-down" class="org-chev"></i>
+        </button>
+      </div>
+      <nav class="nav-links" id="navLinks"></nav>
+      <div class="nav-bottom">
+        <div class="nav-filters"><div class="nf-label">FILTERS <span class="nf-dot"></span></div><div class="nf-val">Hiding internal users</div></div>
+        <a class="nav-item" href="#/settings" data-static="1"><i data-lucide="cog"></i><span>settings</span></a>
+        <div class="nav-account"><span class="acct-av">J</span><span class="acct-mail">jackson@sprinkle.ai</span><i data-lucide="chevrons-up-down"></i></div>
+      </div>
+    </aside>
+    <div class="page">
+      <header class="page-header">
+        <div class="ph-left">
+          <i data-lucide="newspaper" class="ph-icon"></i>
+          <h1 class="ph-title" id="phTitle">Briefs</h1>
+          <div class="ph-meta" id="phMeta"></div>
+        </div>
+        <div class="ph-right">
+          <button type="button" class="kbd-hint" id="helpBtn" aria-label="Keyboard shortcuts">?</button>
+          <button type="button" class="ask-btn" id="askBtn">Ask Raindrop</button>
+        </div>
+      </header>
+      <main class="page-main" id="main" tabindex="-1">
+        <div class="boot" id="boot" aria-live="polite">
+          <div class="sk sk-rail"></div>
+          <div class="sk-body"><div class="sk sk-h1"></div><div class="sk sk-line"></div><div class="sk sk-line short"></div><div class="sk sk-table"></div></div>
+        </div>
+      </main>
+      <footer class="demo-foot">Unofficial concept demo by Mohith Gajjela. Not affiliated with Raindrop. Synthetic data (seeded from figures on raindrop.ai/reports). <a href="https://github.com/Mohith26/raindrop-change-impact">Source</a></footer>
+    </div>
+  </div>
+  <div id="overlay" class="overlay" hidden></div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

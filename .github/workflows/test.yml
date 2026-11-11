@@ -1,0 +1,15 @@
+name: test
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node --test test/impact.test.mjs
+      - name: Data and results are reproducible
+        run: |
+          node scripts/generate.mjs > /dev/null
+          git diff --exit-code -- data/ results/results.json
