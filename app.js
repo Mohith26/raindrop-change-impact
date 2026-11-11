@@ -144,7 +144,7 @@ function renderPage() {
 
 function renderRail() {
   const sel = state.route.view === 'digest' ? 'digest' : 'cr';
-  const item = (key, to, dot, title, meta, badge) => `<a class="rail-item ${sel === key ? 'sel' : ''}" href="${to}" ${sel === key ? 'aria-current="page"' : ''}><span class="rail-dot ${dot}"></span><span class="rail-main"><span class="rail-title"><b>${title}</b>${badge || ''}</span><span class="rail-meta">${meta}</span></span></a>`;
+  const item = (key, to, dot, title, meta, badge) => `<a class="rail-item ${sel === key ? 'sel' : ''}" href="${to}" ${sel === key ? 'aria-current="page"' : ''} ${key.startsWith('b') ? 'data-static="brief"' : ''}><span class="rail-dot ${dot}"></span><span class="rail-main"><span class="rail-title"><b>${title}</b>${badge || ''}</span><span class="rail-meta">${meta}</span></span></a>`;
   return `<nav class="rail" aria-label="Briefs">
     <div class="rail-project">Production</div>
     ${item('cr', '#/briefs/change-reports', 'bg-green', 'Change reports', 'Built-in · Merged PR reports', '<span class="new-badge">New</span>')}
@@ -681,7 +681,7 @@ document.addEventListener('click', (e) => {
   const t = e.target;
   if (openMenuEl && !t.closest('.menu') && !t.closest('[data-menu]')) closeMenu();
   const stat = t.closest('[data-static]');
-  if (stat) { e.preventDefault(); toast('Only Briefs is part of this concept demo'); return; }
+  if (stat) { e.preventDefault(); toast(stat.dataset.static === 'brief' ? 'Custom briefs are not part of this concept demo' : 'Only Briefs is part of this concept demo'); return; }
   const tabB = t.closest('[data-tab]'); if (tabB) { go({ view: tabB.dataset.tab }); return; }
   const prB = t.closest('[data-pr]'); if (prB && prB.classList.contains('pri')) { go({ pr: +prB.dataset.pr, metric: null }); return; }
   const day = t.closest('[data-day]'); if (day) { state.openDays.push(day.dataset.day); save(); renderPage(); return; }
